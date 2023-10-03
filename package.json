@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node ./build/index.js",
     "dev": "ts-node-dev ./src/index.ts",
+    "setUpDB": "node ./build/db/setUp.js",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
