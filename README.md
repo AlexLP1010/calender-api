@@ -36,3 +36,5 @@ For start in development mode, follow the next command
 ~~~ bash
 npm run dev
 ~~~
+
+Open `requests_b.json` file

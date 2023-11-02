@@ -1,6 +1,5 @@
 import express from 'express'
-import { createEntry, getAllEntries, removeEntry, updateEntry } from '../services/calender'
-import { getOne } from '../db/calender'
+import { createEntry, getAllEntries, removeEntry, updateEntry, getOneEntry } from '../services/calender'
 import { validEntry } from '../middlewares/validentry'
 
 const router = express.Router()
@@ -17,7 +16,7 @@ router.get('/', (_req, res) => {
 
 router.get('/:id', (req, res) => {
   const id = Number(req.params.id)
-  getOne(id)
+  getOneEntry(id)
     .then(data => {
       res.send(data)
     })
